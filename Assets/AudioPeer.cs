@@ -5,10 +5,15 @@ using UnityEngine;
 [RequireComponent (typeof(AudioSource))]
 public class AudioPeer : MonoBehaviour {
     AudioSource _audioSource;
-    public static float[] _samples = new float[512];
-    public static float[] _freqBand = new float[8];
-    public static float[] _bandBuffer = new float[8];
+    float[] _samples = new float[512];
+    float[] _freqBand = new float[8];
+    float[] _bandBuffer = new float[8];
     float[] _bufferDecrease = new float[8];
+
+    float[] _freqBandsHighest = new float[8];
+    public static float[] _audioBand = new float[8];
+    public static float[] _audioBandBuffer = new float[8];
+
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +25,19 @@ public class AudioPeer : MonoBehaviour {
         GetSpectrumAudioSource();
         MakeFrequencyBands();
         BandBuffer();
+        CreateAudioBands();
 	}
+
+    void CreateAudioBands() {
+        for(int i = 0; i < 8; i++) {
+            if(_freqBand[i] > _freqBandsHighest[i]) {
+                _freqBandsHighest[i] = _freqBand[i];
+            }
+            _audioBand[i] = (_freqBand[i] / _freqBandsHighest[i]);
+            _audioBandBuffer[i] = (_bandBuffer[i] / _freqBandsHighest[i]);
+               
+        }
+    }
 
     void GetSpectrumAudioSource() {
         _audioSource.GetSpectrumData(_samples,0,FFTWindow.Blackman);
