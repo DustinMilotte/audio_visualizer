@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientSkyColor: {r: 0.3602941, g: 0.37089097, b: 0.37089097, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -130,8 +130,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 1
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 50
   _useBuffer: 1
+  _myColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &18941186 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442806, guid: 36fbcee044f43334d8b6b4b5d2ed085b, type: 2}
@@ -157,8 +158,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 4
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 0
   _useBuffer: 0
+  _myColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &131355040
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,8 +259,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 0
   _startScale: 1
-  _scaleMultiplier: 10
-  _useBuffer: 0
+  _maxScale: 50
+  _useBuffer: 1
+  _myColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &362303493 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442806, guid: 36fbcee044f43334d8b6b4b5d2ed085b, type: 2}
@@ -349,8 +352,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 1
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 0
   _useBuffer: 0
+  _myColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &427753268
 Prefab:
   m_ObjectHideFlags: 0
@@ -578,8 +582,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 3
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 50
   _useBuffer: 1
+  _myColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &560153603 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442806, guid: 36fbcee044f43334d8b6b4b5d2ed085b, type: 2}
@@ -659,8 +664,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 5
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 50
   _useBuffer: 1
+  _myColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &643603712 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442806, guid: 36fbcee044f43334d8b6b4b5d2ed085b, type: 2}
@@ -686,8 +692,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 3
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 0
   _useBuffer: 0
+  _myColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &820945638
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,8 +806,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 4
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 50
   _useBuffer: 1
+  _myColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &937716021 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442806, guid: 36fbcee044f43334d8b6b4b5d2ed085b, type: 2}
@@ -822,8 +830,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 2
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 50
   _useBuffer: 1
+  _myColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &1129902894 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442806, guid: 36fbcee044f43334d8b6b4b5d2ed085b, type: 2}
@@ -849,8 +858,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 2
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 0
   _useBuffer: 0
+  _myColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1219841414 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 129616, guid: 36fbcee044f43334d8b6b4b5d2ed085b, type: 2}
@@ -868,8 +878,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 6
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 50
   _useBuffer: 1
+  _myColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &1219841419 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442806, guid: 36fbcee044f43334d8b6b4b5d2ed085b, type: 2}
@@ -949,8 +960,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 0
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 0
   _useBuffer: 0
+  _myColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1454964589
 Prefab:
   m_ObjectHideFlags: 0
@@ -1024,14 +1036,14 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1487087957
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1487087956}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aeeef29a126776c4eab79ed59002afe8, type: 3}
   m_Name: 
@@ -1184,8 +1196,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 7
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 50
   _useBuffer: 1
+  _myColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &1547257108 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442806, guid: 36fbcee044f43334d8b6b4b5d2ed085b, type: 2}
@@ -1211,8 +1224,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 5
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 0
   _useBuffer: 0
+  _myColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1603589046
 Prefab:
   m_ObjectHideFlags: 0
@@ -1292,8 +1306,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 7
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 0
   _useBuffer: 0
+  _myColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1635619621
 Prefab:
   m_ObjectHideFlags: 0
@@ -1606,8 +1621,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _band: 6
   _startScale: 1
-  _scaleMultiplier: 10
+  _maxScale: 0
   _useBuffer: 0
+  _myColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1989327270
 Prefab:
   m_ObjectHideFlags: 0

@@ -24,7 +24,7 @@ public class InstantiateCubes : MonoBehaviour {
 	void Update () {
 		for (int  i = 0; i < 512; i++) {
             if(_sampleCubes[i] != null) {
-                _sampleCubes[i].transform.localScale = new Vector3(10, (AudioPeer._samples[i] * _maxScale) + 2, 10);
+                // _sampleCubes[i].transform.localScale = new Vector3(10, (AudioPeer._samples[i] * _maxScale) + 2, 10);
             }
         }
 	}
