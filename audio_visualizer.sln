@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "audio_visualizer", "audio_visualizer.csproj", "{D42972B1-24D3-CAF6-F49F-CA77E38EF4D6}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "audio_visualizer", "Assembly-CSharp.csproj", "{C306E61C-039F-9134-2F92-9F813AADFC74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "audio_visualizer.Editor", "audio_visualizer.Editor.csproj", "{AA864F42-2F3F-10ED-E2BE-DC59EFDD793B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "audio_visualizer", "Assembly-CSharp-Editor.csproj", "{3ADF927A-B8C6-BD30-4BA0-9D93C4509B5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,16 +11,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D42972B1-24D3-CAF6-F49F-CA77E38EF4D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D42972B1-24D3-CAF6-F49F-CA77E38EF4D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D42972B1-24D3-CAF6-F49F-CA77E38EF4D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D42972B1-24D3-CAF6-F49F-CA77E38EF4D6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA864F42-2F3F-10ED-E2BE-DC59EFDD793B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA864F42-2F3F-10ED-E2BE-DC59EFDD793B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA864F42-2F3F-10ED-E2BE-DC59EFDD793B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA864F42-2F3F-10ED-E2BE-DC59EFDD793B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C306E61C-039F-9134-2F92-9F813AADFC74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C306E61C-039F-9134-2F92-9F813AADFC74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C306E61C-039F-9134-2F92-9F813AADFC74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C306E61C-039F-9134-2F92-9F813AADFC74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ADF927A-B8C6-BD30-4BA0-9D93C4509B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ADF927A-B8C6-BD30-4BA0-9D93C4509B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ADF927A-B8C6-BD30-4BA0-9D93C4509B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ADF927A-B8C6-BD30-4BA0-9D93C4509B5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
